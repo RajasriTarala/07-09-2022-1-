@@ -1,0 +1,20 @@
+#include<stdio.h>
+void main()
+{
+	int first=0,second=1;
+	int n=10, sum=0;
+//	printf("%d%d\t",first, second);
+	sum=first+second;
+	while(sum<n)
+	{
+	//	printf("%d\t",sum);
+		first=second;
+		second=sum;
+		sum=first+second;
+		//printf("%d",sum);
+	}
+	if(sum==n)
+	  printf("YES");
+	else
+	  printf("NO");
+}
